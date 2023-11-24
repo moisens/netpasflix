@@ -2,6 +2,8 @@
 @use '_dashboard' ;
 @use 'index' ;
 
+$red: #E50914;
+$gray: #505050;
 // NAVBAR
 
 body {
@@ -28,7 +30,7 @@ header {
             a {
                 text-decoration: none;
                 color: white;
-                padding: 15px;
+                padding: 5px;
             }
         }
     }
