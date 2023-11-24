@@ -1,1 +1,35 @@
-@import 
+@use '_contact' ;
+@use '_dashboard' ;
+@use 'index' ;
+
+// NAVBAR
+
+body {
+    background-color: black;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    >div:first-child {
+        color: white;
+        padding: 15px;
+    }
+    >div:nth-child(2) {
+
+        width: 70%;
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+
+            a {
+                text-decoration: none;
+                color: white;
+                padding: 15px;
+            }
+        }
+    }
+}

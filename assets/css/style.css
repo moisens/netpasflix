@@ -1,0 +1,26 @@
+body {
+  background-color: black;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header > div:first-child {
+  color: white;
+  padding: 15px;
+}
+header > div:nth-child(2) {
+  width: 70%;
+}
+header > div:nth-child(2) nav {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+header > div:nth-child(2) nav a {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+}/*# sourceMappingURL=style.css.map */
