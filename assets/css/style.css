@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
 .form {
   border-radius: 20px;
   box-sizing: border-box;
@@ -65,9 +65,6 @@
 .form .cut-short {
   width: 50px;
 }
-.form .input:not(:-moz-placeholder-shown) ~ .cut {
-  transform: translateY(8px);
-}
 .form .input:focus ~ .cut,
 .form .input:not(:placeholder-shown) ~ .cut {
   transform: translateY(8px);
@@ -83,15 +80,9 @@
   transition: transform 200ms, color 200ms;
   top: 20px;
 }
-.form .input:not(:-moz-placeholder-shown) ~ .placeholder {
-  transform: translateY(-30px) translateX(10px) scale(0.75);
-}
 .form .input:focus ~ .placeholder,
 .form .input:not(:placeholder-shown) ~ .placeholder {
   transform: translateY(-30px) translateX(10px) scale(0.75);
-}
-.form .input:not(:-moz-placeholder-shown) ~ .placeholder {
-  color: #808097;
 }
 .form .input:not(:placeholder-shown) ~ .placeholder {
   color: #808097;
@@ -121,6 +112,91 @@
   transition: background-color 0.3s ease-in;
 }
 
+main {
+  width: 100%;
+  height: auto;
+}
+main .header-main {
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 69.5px);
+}
+main .header-main > :first-child {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 300;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fffffc;
+}
+main .header-main > :first-child > h1 {
+  font-size: 3.2rem;
+  width: 600px;
+  text-align: center;
+  padding-bottom: 25px;
+}
+main .header-main > :first-child > p {
+  width: 600px;
+  text-align: center;
+  padding-bottom: 40px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+main .header-main > :first-child form > div input {
+  width: 16.25rem;
+  height: 2.813rem;
+  padding-left: 0.75rem;
+  background-color: #fffffc1f;
+  border: solid 0.063rem #fffffc;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  color: #000;
+}
+main .header-main > :first-child form > div input[type=text] {
+  color: #fffffc;
+  font-size: 1.1rem;
+}
+main .header-main > :first-child form > div button {
+  background-color: #fffffc;
+  border: none;
+  height: 2.813rem;
+  padding: 0 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all ease 0.8s;
+}
+main .header-main > :first-child form > div button:hover {
+  color: #fffffc;
+  background-color: #f44c2f;
+}
+main .header-main .bck-transparent {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.4668461134) 0%, black 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+main .header-main .bck-img-container {
+  background-image: url("../images/quantum_Leap-2.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
 *,
 *::before,
 *::after {
@@ -131,16 +207,17 @@
 
 body {
   background-color: black;
+  font-family: "lato";
+  font-size: 1rem;
 }
 
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 header > div:first-child {
-  color: white;
-  padding: 15px;
+  color: #e91616;
 }
 header > div:nth-child(2) {
   width: 70%;
@@ -149,32 +226,12 @@ header > div:nth-child(2) nav {
   display: flex;
   align-items: center;
   justify-content: end;
+  gap: 20px;
+  padding: 25px;
 }
 header > div:nth-child(2) nav a {
   text-decoration: none;
   color: white;
-  padding: 5px;
 }
 
-main {
-  width: 100%;
-  height: auto;
-}
-
-.header-main {
-  width: 100vw;
-  height: calc(80vh - 48px);
-  position: relative;
-  background-image: url("../images/quantum_Leap-2.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.header-main .header-main-H2 {
-  position: absolute;
-  top: 50%;
-  left: 50px;
-  color: white;
-  font-family: "Lato", sans-serif;
-  font-size: 5rem;
-  width: 50%;
-}/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */

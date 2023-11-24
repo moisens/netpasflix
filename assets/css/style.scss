@@ -1,10 +1,10 @@
-@use '_contact' ;
-@use '_dashboard' ;
-@use 'index' ;
+@use "_contact";
+@use "_dashboard";
+@use "index";
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
 
-$red: #E50914;
+$red: #e50914;
 $gray: #505050;
 
 *,
@@ -17,58 +17,36 @@ $gray: #505050;
 // NAVBAR
 
 body {
-    background-color: black;
+  background-color: black;
+  font-family: "lato";
+  font-size: 1rem;
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    >div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  > div:first-child {
+    color: rgb(233, 22, 22);
+  }
+  > div:nth-child(2) {
+    width: 70%;
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      gap: 20px;
+      padding: 25px;
+
+      a {
+        text-decoration: none;
         color: white;
-        padding: 15px;
+      }
     }
-    >div:nth-child(2) {
-
-        width: 70%;
-
-        nav {
-            display: flex;
-            align-items: center;
-            justify-content: end;
-
-            a {
-                text-decoration: none;
-                color: white;
-                padding: 5px;
-            }
-        }
-    }
+  }
 }
 
-//main
-main {
-    width: 100%;
-    height: auto;
-}
-.header-main {
-    width: 100vw;
-    height: calc(80vh - 48px);
-    position: relative;
-    background-image: url("../images/quantum_Leap-2.jpeg");
-    background-repeat: no-repeat;//Why are you not working!!!!
-    background-size: cover;
 
-    
 
-    .header-main-H2 {
-        position: absolute;
-        top: 50%;
-        left: 50px;
-        color: white;
-        font-family: 'Lato', sans-serif;
-        font-size: 5rem;
-        width: 50%;
 
-    }
-}

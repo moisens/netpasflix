@@ -1,0 +1,102 @@
+//main
+main {
+  width: 100%;
+  height: auto;
+
+  .header-main {
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 69.5px);
+
+    > :first-child {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 300;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fffffc;
+
+      > h1 {
+        font-size: 3.2rem;
+        width: 600px;
+        text-align: center;
+        padding-bottom: 25px;
+      }
+
+      > p {
+        width: 600px;
+        text-align: center;
+        padding-bottom: 40px;
+        line-height: 1.6;
+        font-size: 1.1rem;
+      }
+
+      form {
+        > div {
+          input {
+            width: 16.25rem;
+            height: 2.813rem;
+            padding-left: 0.75rem;
+            background-color: #fffffc1f;
+            border: solid 0.063rem #fffffc;
+            border-radius: 0.5rem;
+            margin-right: 1rem;
+            color: #000;
+
+            &[type="text"] {
+              color: #fffffc;
+              font-size: 1.1rem;
+            }
+          }
+          button {
+            background-color: #fffffc;
+            border: none;
+            height: 2.813rem;
+            padding: 0 2rem;
+            border-radius: 0.5rem;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all ease .8s;
+
+            &:hover {
+              color: #fffffc;
+              background-color: hsl(9, 90%, 57%)
+            }
+          }
+        }
+      }
+    }
+
+    .bck-transparent {
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 0.4668461134453782) 0%,
+        rgba(0, 0, 0, 1) 100%
+      );
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 200;
+    }
+
+    .bck-img-container {
+      background-image: url("../images/quantum_Leap-2.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 100;
+    }
+  }
+}
