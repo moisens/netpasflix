@@ -42,7 +42,7 @@ main {
             width: 16.25rem;
             height: 2.813rem;
             padding-left: 0.75rem;
-            background-color: #fffffc1f;
+            background-color: #323232a2;
             border: solid 0.063rem #fffffc;
             border-radius: 0.5rem;
             margin-right: 1rem;
@@ -61,11 +61,11 @@ main {
             border-radius: 0.5rem;
             font-size: 1.1rem;
             cursor: pointer;
-            transition: all ease .8s;
+            transition: all ease 0.8s;
 
             &:hover {
               color: #fffffc;
-              background-color: hsl(9, 90%, 57%)
+              background-color: hsl(9, 90%, 57%);
             }
           }
         }
@@ -87,7 +87,7 @@ main {
     }
 
     .bck-img-container {
-      background-image: url("../images/quantum_Leap-2.jpeg");
+      background-image: url("../images/strange_new_worlds.jpeg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -97,6 +97,42 @@ main {
       top: 0;
       left: 0;
       z-index: 100;
+    }
+  }
+}
+
+//Media queries
+@media screen and (max-width: 641px) {
+  main {
+    .header-main {
+      > :first-child {
+        align-items: start;
+        padding: 20px 20px;
+        overflow-x: hidden;
+
+        > h1 {
+          font-size: 3.2rem;
+          width: 100%;
+          text-align: left;
+          padding-top: 120px;
+        }
+        > p {
+          width: 100%;
+          text-align: left;
+        }
+        form {
+          width: 100%;
+          > div {
+            input {
+              width: 100%;
+              margin-bottom: 20px;
+            }
+            button {
+              width: 100%;
+            }
+          }
+        }
+      }
     }
   }
 }

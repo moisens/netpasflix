@@ -151,7 +151,7 @@ main .header-main > :first-child form > div input {
   width: 16.25rem;
   height: 2.813rem;
   padding-left: 0.75rem;
-  background-color: #fffffc1f;
+  background-color: #323232a2;
   border: solid 0.063rem #fffffc;
   border-radius: 0.5rem;
   margin-right: 1rem;
@@ -185,7 +185,7 @@ main .header-main .bck-transparent {
   z-index: 200;
 }
 main .header-main .bck-img-container {
-  background-image: url("../images/quantum_Leap-2.jpeg");
+  background-image: url("../images/strange_new_worlds.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -197,6 +197,33 @@ main .header-main .bck-img-container {
   z-index: 100;
 }
 
+@media screen and (max-width: 641px) {
+  main .header-main > :first-child {
+    align-items: start;
+    padding: 20px 20px;
+    overflow-x: hidden;
+  }
+  main .header-main > :first-child > h1 {
+    font-size: 3.2rem;
+    width: 100%;
+    text-align: left;
+    padding-top: 120px;
+  }
+  main .header-main > :first-child > p {
+    width: 100%;
+    text-align: left;
+  }
+  main .header-main > :first-child form {
+    width: 100%;
+  }
+  main .header-main > :first-child form > div input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  main .header-main > :first-child form > div button {
+    width: 100%;
+  }
+}
 *,
 *::before,
 *::after {
